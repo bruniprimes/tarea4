@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*encabezado*/
+.cabeza{
+    margin: 2px;
+    width: 100%;
+    min-height: 150px;
+    background-color: brown;
+    position: sticky;
+    top: 0;  
+    
+}
+.rad{
+    border-radius: 30%;
+    max-width: 100px
+}
+.had{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.nave{
+    text-align: center;
+    
+}
+.espa{
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.imi{
+   color: brown;
+}
+
+    
+    
+
+/*body index*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    background-color: blanchedalmond;  
+    margin-bottom: 20px;
+    min-height: 100vh;
+}
+h2{
+    text-align: center;
+}
+.index1,.cont2,.parte2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+}
+.imagen{
+    max-width: 100%;
+    max-height: 100px;
+    
+}
+.imagen:hover{
+    transform: scale(1.5); 
+   
+  }
+.todoi{
+    border:solid 2px red;
+    text-align: center;
+    padding: 10px;
+    
+}
+footer{
+    text-align: center;
+    background-color: brown;
+}
+/* body producto*/
+
+.todo{
+    border:solid 2px red;
+    text-align: center;
+    padding: 10px;
+}
+.contenedor3{
+    padding-left: 20px;
+    background-color: blanchedalmond;  
+    margin-bottom: 10px;
+    min-height: 100vh;
+}
+/*prueba*/
+  /*prueba*/
+  html, body {
+    height: 100%; 
+    margin: 0;
+  }
+  main {
+    flex: 1; /* ocupa todo el espacio disponible entre header y footer */
+  }
+  
+/*table*/
+table{
+    width: 100%;
+}
+table,tr,td,th {
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+.cont3{
+    margin-bottom: 10px;
+}
+/*body about */
+.rad2{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+.team,.nosotros{
+    
+    text-align: center;
+}
+/*mapa y form */
+.contap{
+   display: flex;
+    min-height: 100vh; 
+    background-color: rgb(107, 107, 117);
+}
+#name{
+    width: 100%;
+}
+.categoflex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.care{
+    min-width: 33%;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+  }
+.formulario{
+    background-color: red;
+    margin-bottom: 10px;
+    gap: 10px;
+    padding: 5px;
+}
+.formflex{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.buto2{
+  display: flex;
+  gap: 10PX;
+  margin: 10px;
+  justify-content: center;
+}
+.buto2>a{
+  text-decoration: none;
+  color: black;
+  background-color: azure;
+}
+/*querry */
+/*movil menor a 480*/
+@media (max-width:479px){
+    /* index*/
+    .todoi,.team{
+      width: 80%;
+      height: 200px;
+    }
+    .todo{
+      width: 400px;
+      height: 200px;
+    }
+    .index1,.contap{
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    /*mapa contacto*/
+    .mapa,.formulario{
+      background-color: aqua;
+      width: 100%;
+      min-height: 400px;
+  }
+  .cont1{
+    display: none;
+  }
+  
+  
+  
+  }
+  @media (min-width: 480px ) and (max-width: 768px){
+    .cont1,.mapa{
+      float: left;
+      width: 29%;
+    }
+  
+    .todo,.team{
+      width: 400px;
+      height: 200px;
+    }
+    .index1,.contap{
+      flex-direction: column;
+      align-items: center;
+    }
+    .todoi{
+      width: 80%;
+      height: 200px;
+    }
+    
+      /*mapa contacto*/
+      .mapa,.formulario{
+        background-color: aqua;
+        width: 100%;
+        min-height: 400px;
+    }
+    
+    
+  }
+  @media (min-width:769px ) and (max-width:1024px){
+      .cont1{
+          float: left;
+      }
+      .todo{
+          width: 49%;
+      }
+      .todoi,.team{
+        
+        width: 45%;
+        height: 200px;
+      }
+     iframe{
+      height: 100%;
+     }
+      
+  
+  }
+  @media (min-width:1025px ){
+      .cont1{
+          float: left;
+          width: 29%;
+        }
+        .todo{
+          width: 30%;
+      }
+      .todoi,.team{
+        width: 30%;
+        height: 200px;
+      }
+      .formulario,.mapa{
+        height: 60%;
+        width: 40%;
+  
+     }
+     .contap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+  
+  }
+  
