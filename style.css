@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 /*encabezado*/
+.center2,.center{
+  
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
 .cabeza{
     margin-bottom: 2px;
     width: 100%;
@@ -132,7 +138,6 @@ table,tr,td,th {
     width: 50%;
 }
 .team,.nosotros{
-    
     text-align: center;
 }
 /*mapa y form */
