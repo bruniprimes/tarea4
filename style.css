@@ -5,7 +5,7 @@
 }
 /*encabezado*/
 .cabeza{
-    margin: 2px;
+    margin-bottom: 2px;
     width: 100%;
     min-height: 150px;
     background-color: brown;
@@ -34,10 +34,20 @@
     color: white;
     text-decoration: none;
 }
+.espa:hover{
+ color: aqua;
+}
 .imi{
    color: brown;
 }
-
+/*button*/
+.boton{
+  text-decoration: none;
+  color:blue;
+}
+.boton:hover{
+  color: red;
+}
     
     
 
@@ -49,6 +59,7 @@
     background-color: blanchedalmond;  
     margin-bottom: 20px;
     min-height: 100vh;
+    width: 100%;
 }
 h2{
     text-align: center;
@@ -78,6 +89,7 @@ h2{
 footer{
     text-align: center;
     background-color: brown;
+   width: 100%; 
 }
 /* body producto*/
 
@@ -239,7 +251,10 @@ iframe{
      iframe{
       height: 100%;
      }
-      
+      /*contacto*/
+      .contap{
+        flex-direction: row-reverse;
+      }
   
   }
   @media (min-width:1025px ){
